@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.getsouth.com/wp-content/uploads/2017/05/Futaleuf%C3%BA-village.jpg');
+    background-repeat: repeat;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+#search-section {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+#add-product-section {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#add-product-section p {
+    margin-bottom: 0.5rem;
+}
+
+#add-product-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#add-product-button:hover {
+    background-color: #45a049;
+}
+
+#product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.store-item {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-group button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.input-group button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    #search-section {
+        flex-direction: column;
+    }
+
+    #search-input, #search-button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input, .input-group button {
+        width: 100%;
+    }
+}
